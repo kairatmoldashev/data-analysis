@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7f0aa876daadff967b64225529254fea {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7f0aa876daadff967b64225529254fea" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7f0aa876daadff967b64225529254fea = L.map(
+                "map_7f0aa876daadff967b64225529254fea",
+                {
+                    center: [48.0196, 66.9237],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f2cf5cd0ccbadabc98d6c5d477d74ed3 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var marker_000be4a4e2bb5a510e3da8ace62c61a0 = L.marker(
+                [51.95, 70.45],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_ee73e703caf03549076f7ea7487c8695 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_000be4a4e2bb5a510e3da8ace62c61a0.setIcon(icon_ee73e703caf03549076f7ea7487c8695);
+        
+    
+        var popup_d643db5d42c5fa84794470a3709c9ea7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f09eabcf0c6ef09f1f544fe3b90e537a = $(`<div id="html_f09eabcf0c6ef09f1f544fe3b90e537a" style="width: 100.0%; height: 100.0%;">School Capacity: 25529</div>`)[0];
+                popup_d643db5d42c5fa84794470a3709c9ea7.setContent(html_f09eabcf0c6ef09f1f544fe3b90e537a);
+            
+        
+
+        marker_000be4a4e2bb5a510e3da8ace62c61a0.bindPopup(popup_d643db5d42c5fa84794470a3709c9ea7)
+        ;
+
+        
+    
+    
+            var marker_695901a07462607ce5c72de9a535fba2 = L.marker(
+                [51.95, 70.25],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_93b73e09ad917a8a4594b64f99a341ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_695901a07462607ce5c72de9a535fba2.setIcon(icon_93b73e09ad917a8a4594b64f99a341ec);
+        
+    
+        var popup_c416ec4cd1516a06cf87ac8aed44ea60 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7a4dc485c214096f9598acb03ac57cf4 = $(`<div id="html_7a4dc485c214096f9598acb03ac57cf4" style="width: 100.0%; height: 100.0%;">Number of Students: 21931</div>`)[0];
+                popup_c416ec4cd1516a06cf87ac8aed44ea60.setContent(html_7a4dc485c214096f9598acb03ac57cf4);
+            
+        
+
+        marker_695901a07462607ce5c72de9a535fba2.bindPopup(popup_c416ec4cd1516a06cf87ac8aed44ea60)
+        ;
+
+        
+    
+    
+            var marker_babd2853fa50d645ce73b0d970aab15c = L.marker(
+                [50.3, 57.2],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_0502e9f88a4c6483bc0a06ae0b932998 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_babd2853fa50d645ce73b0d970aab15c.setIcon(icon_0502e9f88a4c6483bc0a06ae0b932998);
+        
+    
+        var popup_82cb67aa0bf58f39c21393c09036ad90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d70db1bdc1a61a84ee16bd2a71c87a4c = $(`<div id="html_d70db1bdc1a61a84ee16bd2a71c87a4c" style="width: 100.0%; height: 100.0%;">School Capacity: 34221</div>`)[0];
+                popup_82cb67aa0bf58f39c21393c09036ad90.setContent(html_d70db1bdc1a61a84ee16bd2a71c87a4c);
+            
+        
+
+        marker_babd2853fa50d645ce73b0d970aab15c.bindPopup(popup_82cb67aa0bf58f39c21393c09036ad90)
+        ;
+
+        
+    
+    
+            var marker_464d8a1999cd4431d6c204658138cc7c = L.marker(
+                [50.3, 57.0],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_47fc59b5eab42c765a67ad9bf1c73e19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_464d8a1999cd4431d6c204658138cc7c.setIcon(icon_47fc59b5eab42c765a67ad9bf1c73e19);
+        
+    
+        var popup_ade597196a48f0d2bbfbf1a7aa9225a2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e9019401198161506ca6761011ee793 = $(`<div id="html_1e9019401198161506ca6761011ee793" style="width: 100.0%; height: 100.0%;">Number of Students: 31885</div>`)[0];
+                popup_ade597196a48f0d2bbfbf1a7aa9225a2.setContent(html_1e9019401198161506ca6761011ee793);
+            
+        
+
+        marker_464d8a1999cd4431d6c204658138cc7c.bindPopup(popup_ade597196a48f0d2bbfbf1a7aa9225a2)
+        ;
+
+        
+    
+    
+            var marker_5ce0233cde0447c65563c5cb22206777 = L.marker(
+                [44.0, 77.4],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_aa2e176c472d4d173c1096ce0e8d42c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_5ce0233cde0447c65563c5cb22206777.setIcon(icon_aa2e176c472d4d173c1096ce0e8d42c6);
+        
+    
+        var popup_6ec3dc879c58411663c8a1c2e139bfdd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eabad7ea47bf39fc4bb455b3b3dc1fb3 = $(`<div id="html_eabad7ea47bf39fc4bb455b3b3dc1fb3" style="width: 100.0%; height: 100.0%;">School Capacity: 32001</div>`)[0];
+                popup_6ec3dc879c58411663c8a1c2e139bfdd.setContent(html_eabad7ea47bf39fc4bb455b3b3dc1fb3);
+            
+        
+
+        marker_5ce0233cde0447c65563c5cb22206777.bindPopup(popup_6ec3dc879c58411663c8a1c2e139bfdd)
+        ;
+
+        
+    
+    
+            var marker_32f82a71ebbeee040adf6937b4ed72f9 = L.marker(
+                [44.0, 77.2],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_3463eb7d9b69ac1596ca093f2924a4f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_32f82a71ebbeee040adf6937b4ed72f9.setIcon(icon_3463eb7d9b69ac1596ca093f2924a4f7);
+        
+    
+        var popup_b3657b38bb23691db110fa4b1650c1fe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fd2a40c29dc6869f9aa8c1f1ef590db = $(`<div id="html_6fd2a40c29dc6869f9aa8c1f1ef590db" style="width: 100.0%; height: 100.0%;">Number of Students: 28059</div>`)[0];
+                popup_b3657b38bb23691db110fa4b1650c1fe.setContent(html_6fd2a40c29dc6869f9aa8c1f1ef590db);
+            
+        
+
+        marker_32f82a71ebbeee040adf6937b4ed72f9.bindPopup(popup_b3657b38bb23691db110fa4b1650c1fe)
+        ;
+
+        
+    
+    
+            var marker_b6c2ad478e2a573752d62ac294a4245a = L.marker(
+                [47.1, 51.9],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_e089e600824f508d2042b01f841ab9d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_b6c2ad478e2a573752d62ac294a4245a.setIcon(icon_e089e600824f508d2042b01f841ab9d7);
+        
+    
+        var popup_fbec6730b3eb97ae74a99f757f219de7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b52897a50825728ab80001abbd2991f2 = $(`<div id="html_b52897a50825728ab80001abbd2991f2" style="width: 100.0%; height: 100.0%;">School Capacity: 30368</div>`)[0];
+                popup_fbec6730b3eb97ae74a99f757f219de7.setContent(html_b52897a50825728ab80001abbd2991f2);
+            
+        
+
+        marker_b6c2ad478e2a573752d62ac294a4245a.bindPopup(popup_fbec6730b3eb97ae74a99f757f219de7)
+        ;
+
+        
+    
+    
+            var marker_6f945bdee138ff733be255c256bf280c = L.marker(
+                [47.1, 51.699999999999996],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_432954b07014c6f045f1a939115866f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6f945bdee138ff733be255c256bf280c.setIcon(icon_432954b07014c6f045f1a939115866f0);
+        
+    
+        var popup_a7e93c2ff0babc9a6056944c4b312df6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b0ce05132bc60a9157c81288ec32ac3 = $(`<div id="html_8b0ce05132bc60a9157c81288ec32ac3" style="width: 100.0%; height: 100.0%;">Number of Students: 25831</div>`)[0];
+                popup_a7e93c2ff0babc9a6056944c4b312df6.setContent(html_8b0ce05132bc60a9157c81288ec32ac3);
+            
+        
+
+        marker_6f945bdee138ff733be255c256bf280c.bindPopup(popup_a7e93c2ff0babc9a6056944c4b312df6)
+        ;
+
+        
+    
+    
+            var marker_bd17be70bce38607e0302cec47cd9bf4 = L.marker(
+                [49.0, 82.6],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_78074d2037cda65df55248368b821040 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bd17be70bce38607e0302cec47cd9bf4.setIcon(icon_78074d2037cda65df55248368b821040);
+        
+    
+        var popup_9bc70da3555700ed39bfbe2628e8f7ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90809021206558e6c53001318169e990 = $(`<div id="html_90809021206558e6c53001318169e990" style="width: 100.0%; height: 100.0%;">School Capacity: 28364</div>`)[0];
+                popup_9bc70da3555700ed39bfbe2628e8f7ec.setContent(html_90809021206558e6c53001318169e990);
+            
+        
+
+        marker_bd17be70bce38607e0302cec47cd9bf4.bindPopup(popup_9bc70da3555700ed39bfbe2628e8f7ec)
+        ;
+
+        
+    
+    
+            var marker_332182269ee756fcac312eba8af06d88 = L.marker(
+                [49.0, 82.39999999999999],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_fe7495c3464d8a6ffb471322aef791a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_332182269ee756fcac312eba8af06d88.setIcon(icon_fe7495c3464d8a6ffb471322aef791a4);
+        
+    
+        var popup_885341f1884d7c49faff4b72d27e50c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_706abccbcbf13c41a446f590f151436c = $(`<div id="html_706abccbcbf13c41a446f590f151436c" style="width: 100.0%; height: 100.0%;">Number of Students: 26124</div>`)[0];
+                popup_885341f1884d7c49faff4b72d27e50c9.setContent(html_706abccbcbf13c41a446f590f151436c);
+            
+        
+
+        marker_332182269ee756fcac312eba8af06d88.bindPopup(popup_885341f1884d7c49faff4b72d27e50c9)
+        ;
+
+        
+    
+    
+            var marker_8b09b184aec8c75fccece26d0f84c575 = L.marker(
+                [43.6, 73.1],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_f8e29f10b6e2df8925353ff648119645 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_8b09b184aec8c75fccece26d0f84c575.setIcon(icon_f8e29f10b6e2df8925353ff648119645);
+        
+    
+        var popup_b3d1044fa4622093406e0917f33c05ad = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18919a555f04056d55881b033e0bf6df = $(`<div id="html_18919a555f04056d55881b033e0bf6df" style="width: 100.0%; height: 100.0%;">School Capacity: 31349</div>`)[0];
+                popup_b3d1044fa4622093406e0917f33c05ad.setContent(html_18919a555f04056d55881b033e0bf6df);
+            
+        
+
+        marker_8b09b184aec8c75fccece26d0f84c575.bindPopup(popup_b3d1044fa4622093406e0917f33c05ad)
+        ;
+
+        
+    
+    
+            var marker_a8d2bfb6f4e46b04fd9bfbf32c71ed87 = L.marker(
+                [43.6, 72.89999999999999],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_8f533fa546f1529941a56117e4dae1c7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "lightred", "prefix": "fa"}
+            );
+            marker_a8d2bfb6f4e46b04fd9bfbf32c71ed87.setIcon(icon_8f533fa546f1529941a56117e4dae1c7);
+        
+    
+        var popup_c40345e1e1709aab6e39974dbc005500 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ffa222cefc0b998f0c1cad7e7245e4e0 = $(`<div id="html_ffa222cefc0b998f0c1cad7e7245e4e0" style="width: 100.0%; height: 100.0%;">Number of Students: 32178</div>`)[0];
+                popup_c40345e1e1709aab6e39974dbc005500.setContent(html_ffa222cefc0b998f0c1cad7e7245e4e0);
+            
+        
+
+        marker_a8d2bfb6f4e46b04fd9bfbf32c71ed87.bindPopup(popup_c40345e1e1709aab6e39974dbc005500)
+        ;
+
+        
+    
+    
+            var marker_18300c9827a4fc7581036a0855bee3b4 = L.marker(
+                [49.8, 73.1],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_6d069c434428454c952d442a672e836b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_18300c9827a4fc7581036a0855bee3b4.setIcon(icon_6d069c434428454c952d442a672e836b);
+        
+    
+        var popup_f18254acb22f127d48b5e35484488a26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_52e2343e2c0979f79315da89ee69b334 = $(`<div id="html_52e2343e2c0979f79315da89ee69b334" style="width: 100.0%; height: 100.0%;">School Capacity: 27982</div>`)[0];
+                popup_f18254acb22f127d48b5e35484488a26.setContent(html_52e2343e2c0979f79315da89ee69b334);
+            
+        
+
+        marker_18300c9827a4fc7581036a0855bee3b4.bindPopup(popup_f18254acb22f127d48b5e35484488a26)
+        ;
+
+        
+    
+    
+            var marker_a035c3d430670d63567eb3cb92191cc0 = L.marker(
+                [49.8, 72.89999999999999],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_eb1999d5dfab37e314bbca8cf6f4512d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a035c3d430670d63567eb3cb92191cc0.setIcon(icon_eb1999d5dfab37e314bbca8cf6f4512d);
+        
+    
+        var popup_cc5cf8e52a5be8e1f819d2f32a7063dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70893bcfe41d24f9baf7e950565b7c4a = $(`<div id="html_70893bcfe41d24f9baf7e950565b7c4a" style="width: 100.0%; height: 100.0%;">Number of Students: 25458</div>`)[0];
+                popup_cc5cf8e52a5be8e1f819d2f32a7063dc.setContent(html_70893bcfe41d24f9baf7e950565b7c4a);
+            
+        
+
+        marker_a035c3d430670d63567eb3cb92191cc0.bindPopup(popup_cc5cf8e52a5be8e1f819d2f32a7063dc)
+        ;
+
+        
+    
+    
+            var marker_dabed116a58a75a99a8a630c64cf9696 = L.marker(
+                [53.2, 64.6],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_172bd22e6873c087d9118bf45ce87bed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_dabed116a58a75a99a8a630c64cf9696.setIcon(icon_172bd22e6873c087d9118bf45ce87bed);
+        
+    
+        var popup_c61d63457aff9990ac3eb1b3389522e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_141c016fd7402ffecd8289cb3b78944a = $(`<div id="html_141c016fd7402ffecd8289cb3b78944a" style="width: 100.0%; height: 100.0%;">School Capacity: 38539</div>`)[0];
+                popup_c61d63457aff9990ac3eb1b3389522e1.setContent(html_141c016fd7402ffecd8289cb3b78944a);
+            
+        
+
+        marker_dabed116a58a75a99a8a630c64cf9696.bindPopup(popup_c61d63457aff9990ac3eb1b3389522e1)
+        ;
+
+        
+    
+    
+            var marker_e60dc3c716a0a81fc72ab332a52477eb = L.marker(
+                [53.2, 64.39999999999999],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_71cf049ac0d81cb832018403f2a150c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e60dc3c716a0a81fc72ab332a52477eb.setIcon(icon_71cf049ac0d81cb832018403f2a150c5);
+        
+    
+        var popup_17ba5235d208b038ab838b5087e6bf15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98e572cf8f9d600aef8bb4608e9a3851 = $(`<div id="html_98e572cf8f9d600aef8bb4608e9a3851" style="width: 100.0%; height: 100.0%;">Number of Students: 35087</div>`)[0];
+                popup_17ba5235d208b038ab838b5087e6bf15.setContent(html_98e572cf8f9d600aef8bb4608e9a3851);
+            
+        
+
+        marker_e60dc3c716a0a81fc72ab332a52477eb.bindPopup(popup_17ba5235d208b038ab838b5087e6bf15)
+        ;
+
+        
+    
+    
+            var marker_469ecde605153111aa34cac67868504c = L.marker(
+                [44.8, 65.5],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_2df6fc9e314d44f61bb53904091e0b32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_469ecde605153111aa34cac67868504c.setIcon(icon_2df6fc9e314d44f61bb53904091e0b32);
+        
+    
+        var popup_bfb5bac18df66e3a04e0bb1303b975d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b979d5a1ea7951f84d2acee6a0a739a3 = $(`<div id="html_b979d5a1ea7951f84d2acee6a0a739a3" style="width: 100.0%; height: 100.0%;">School Capacity: 37505</div>`)[0];
+                popup_bfb5bac18df66e3a04e0bb1303b975d1.setContent(html_b979d5a1ea7951f84d2acee6a0a739a3);
+            
+        
+
+        marker_469ecde605153111aa34cac67868504c.bindPopup(popup_bfb5bac18df66e3a04e0bb1303b975d1)
+        ;
+
+        
+    
+    
+            var marker_ff1d142946a2821bf61d4e1bf74b1982 = L.marker(
+                [44.8, 65.3],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_9d44a6426062a1d488d6fa8a78814311 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ff1d142946a2821bf61d4e1bf74b1982.setIcon(icon_9d44a6426062a1d488d6fa8a78814311);
+        
+    
+        var popup_794d54ad862567d890753a3dfe99e4b3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3011a66ae365cfaba6caef9d72dfd3d4 = $(`<div id="html_3011a66ae365cfaba6caef9d72dfd3d4" style="width: 100.0%; height: 100.0%;">Number of Students: 36747</div>`)[0];
+                popup_794d54ad862567d890753a3dfe99e4b3.setContent(html_3011a66ae365cfaba6caef9d72dfd3d4);
+            
+        
+
+        marker_ff1d142946a2821bf61d4e1bf74b1982.bindPopup(popup_794d54ad862567d890753a3dfe99e4b3)
+        ;
+
+        
+    
+    
+            var marker_50a39c4e4f51cb221355936258d595ed = L.marker(
+                [43.65, 51.2],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_e6848b93fad76d70331f65174cc2b284 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_50a39c4e4f51cb221355936258d595ed.setIcon(icon_e6848b93fad76d70331f65174cc2b284);
+        
+    
+        var popup_205f9e08cad825dbe5f5b812f0568f39 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_47f535fc07e39fc75985a7ae41939b9c = $(`<div id="html_47f535fc07e39fc75985a7ae41939b9c" style="width: 100.0%; height: 100.0%;">School Capacity: 27636</div>`)[0];
+                popup_205f9e08cad825dbe5f5b812f0568f39.setContent(html_47f535fc07e39fc75985a7ae41939b9c);
+            
+        
+
+        marker_50a39c4e4f51cb221355936258d595ed.bindPopup(popup_205f9e08cad825dbe5f5b812f0568f39)
+        ;
+
+        
+    
+    
+            var marker_bc6c59a90ff17f7f03c260f49658efa3 = L.marker(
+                [43.65, 51.0],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_d2ff7c0dc2d1b33bc26ba7174379d400 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bc6c59a90ff17f7f03c260f49658efa3.setIcon(icon_d2ff7c0dc2d1b33bc26ba7174379d400);
+        
+    
+        var popup_f2f6dbe845d21bfa1c1513296a23bbe8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_db9ffd154eae4a94d990eb5b6d0ca002 = $(`<div id="html_db9ffd154eae4a94d990eb5b6d0ca002" style="width: 100.0%; height: 100.0%;">Number of Students: 23056</div>`)[0];
+                popup_f2f6dbe845d21bfa1c1513296a23bbe8.setContent(html_db9ffd154eae4a94d990eb5b6d0ca002);
+            
+        
+
+        marker_bc6c59a90ff17f7f03c260f49658efa3.bindPopup(popup_f2f6dbe845d21bfa1c1513296a23bbe8)
+        ;
+
+        
+    
+    
+            var marker_fc48ffa4ca9903969d1b3129d89348ae = L.marker(
+                [52.3, 76.95],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_a9b8afd67ff207c535a3c77c9ac1b028 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fc48ffa4ca9903969d1b3129d89348ae.setIcon(icon_a9b8afd67ff207c535a3c77c9ac1b028);
+        
+    
+        var popup_cb48e601596fa8f00995a1108bddf400 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bfca7ce7df3879a592f6404c162078d1 = $(`<div id="html_bfca7ce7df3879a592f6404c162078d1" style="width: 100.0%; height: 100.0%;">School Capacity: 34142</div>`)[0];
+                popup_cb48e601596fa8f00995a1108bddf400.setContent(html_bfca7ce7df3879a592f6404c162078d1);
+            
+        
+
+        marker_fc48ffa4ca9903969d1b3129d89348ae.bindPopup(popup_cb48e601596fa8f00995a1108bddf400)
+        ;
+
+        
+    
+    
+            var marker_7dba46d5c407c150492ba8f09c73b6d8 = L.marker(
+                [52.3, 76.75],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_d31738021d7c154f3bd6b3f9e28bd5ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7dba46d5c407c150492ba8f09c73b6d8.setIcon(icon_d31738021d7c154f3bd6b3f9e28bd5ef);
+        
+    
+        var popup_b65c79a4d0ac9f25b2a9fe47246a2958 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c86ac4204491eceabd1fa05a75f1a1d1 = $(`<div id="html_c86ac4204491eceabd1fa05a75f1a1d1" style="width: 100.0%; height: 100.0%;">Number of Students: 27412</div>`)[0];
+                popup_b65c79a4d0ac9f25b2a9fe47246a2958.setContent(html_c86ac4204491eceabd1fa05a75f1a1d1);
+            
+        
+
+        marker_7dba46d5c407c150492ba8f09c73b6d8.bindPopup(popup_b65c79a4d0ac9f25b2a9fe47246a2958)
+        ;
+
+        
+    
+    
+            var marker_bedd70d0985a32b5f463fe9e9fa17ff8 = L.marker(
+                [54.9, 69.2],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_34c83a1604a6bb136272f8c79d4c5fa8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_bedd70d0985a32b5f463fe9e9fa17ff8.setIcon(icon_34c83a1604a6bb136272f8c79d4c5fa8);
+        
+    
+        var popup_441c5bbc79bc596ed26f1e69454d9c9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17e43b466a6339a729c85be38cc1a428 = $(`<div id="html_17e43b466a6339a729c85be38cc1a428" style="width: 100.0%; height: 100.0%;">School Capacity: 28386</div>`)[0];
+                popup_441c5bbc79bc596ed26f1e69454d9c9d.setContent(html_17e43b466a6339a729c85be38cc1a428);
+            
+        
+
+        marker_bedd70d0985a32b5f463fe9e9fa17ff8.bindPopup(popup_441c5bbc79bc596ed26f1e69454d9c9d)
+        ;
+
+        
+    
+    
+            var marker_446cfb8a23ca6368b1c9e17c504b6087 = L.marker(
+                [54.9, 69.0],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_6cd87fb3189322a61c5972cae18508ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_446cfb8a23ca6368b1c9e17c504b6087.setIcon(icon_6cd87fb3189322a61c5972cae18508ac);
+        
+    
+        var popup_a710d4d46bfd3d029c845918163eb8ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b4840235635c69722207307c22c9664 = $(`<div id="html_0b4840235635c69722207307c22c9664" style="width: 100.0%; height: 100.0%;">Number of Students: 23022</div>`)[0];
+                popup_a710d4d46bfd3d029c845918163eb8ea.setContent(html_0b4840235635c69722207307c22c9664);
+            
+        
+
+        marker_446cfb8a23ca6368b1c9e17c504b6087.bindPopup(popup_a710d4d46bfd3d029c845918163eb8ea)
+        ;
+
+        
+    
+    
+            var marker_f814d24c201c20d21a2933251695fc3a = L.marker(
+                [51.2, 51.35],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_441b5a38af1a0eed6c7764c6bca4613a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_f814d24c201c20d21a2933251695fc3a.setIcon(icon_441b5a38af1a0eed6c7764c6bca4613a);
+        
+    
+        var popup_b9043666050f299c563b4ff365e3d647 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35d88595e73217d6ac2fbfa65019e1b6 = $(`<div id="html_35d88595e73217d6ac2fbfa65019e1b6" style="width: 100.0%; height: 100.0%;">School Capacity: 28217</div>`)[0];
+                popup_b9043666050f299c563b4ff365e3d647.setContent(html_35d88595e73217d6ac2fbfa65019e1b6);
+            
+        
+
+        marker_f814d24c201c20d21a2933251695fc3a.bindPopup(popup_b9043666050f299c563b4ff365e3d647)
+        ;
+
+        
+    
+    
+            var marker_675835edb77fb5ae3649ed2ccc525c8b = L.marker(
+                [51.2, 51.15],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_7e09cc2e15f6d01782cb7f816e6da982 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_675835edb77fb5ae3649ed2ccc525c8b.setIcon(icon_7e09cc2e15f6d01782cb7f816e6da982);
+        
+    
+        var popup_159d18d20f2ce3a7b7d386498b298b52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61b36f5c979f70d4d77ba01488381b75 = $(`<div id="html_61b36f5c979f70d4d77ba01488381b75" style="width: 100.0%; height: 100.0%;">Number of Students: 24203</div>`)[0];
+                popup_159d18d20f2ce3a7b7d386498b298b52.setContent(html_61b36f5c979f70d4d77ba01488381b75);
+            
+        
+
+        marker_675835edb77fb5ae3649ed2ccc525c8b.bindPopup(popup_159d18d20f2ce3a7b7d386498b298b52)
+        ;
+
+        
+    
+    
+            var marker_839bc50a351076575b39ef41a56d555d = L.marker(
+                [45.3001, 68.3],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_f1700d3139337507937a2f729aab7783 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_839bc50a351076575b39ef41a56d555d.setIcon(icon_f1700d3139337507937a2f729aab7783);
+        
+    
+        var popup_263fa258172c4fa45e02833b6c74bb3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6042d1efef9decd277bc09e209c86c1f = $(`<div id="html_6042d1efef9decd277bc09e209c86c1f" style="width: 100.0%; height: 100.0%;">School Capacity: 30872</div>`)[0];
+                popup_263fa258172c4fa45e02833b6c74bb3a.setContent(html_6042d1efef9decd277bc09e209c86c1f);
+            
+        
+
+        marker_839bc50a351076575b39ef41a56d555d.bindPopup(popup_263fa258172c4fa45e02833b6c74bb3a)
+        ;
+
+        
+    
+    
+            var marker_d4c71cb0bb5172080188031b5cfcb25e = L.marker(
+                [45.3001, 68.1],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_0dac93f88f03bfe5cff1c88e804402c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_d4c71cb0bb5172080188031b5cfcb25e.setIcon(icon_0dac93f88f03bfe5cff1c88e804402c2);
+        
+    
+        var popup_8633e22e57ab28b51652a696dd06be68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c3cd3b7b93bb9f5213fe8fae2c3befb = $(`<div id="html_1c3cd3b7b93bb9f5213fe8fae2c3befb" style="width: 100.0%; height: 100.0%;">Number of Students: 46383</div>`)[0];
+                popup_8633e22e57ab28b51652a696dd06be68.setContent(html_1c3cd3b7b93bb9f5213fe8fae2c3befb);
+            
+        
+
+        marker_d4c71cb0bb5172080188031b5cfcb25e.bindPopup(popup_8633e22e57ab28b51652a696dd06be68)
+        ;
+
+        
+    
+    
+            var marker_17e4a7315def9b634db9403c4d0310d4 = L.marker(
+                [50.4111, 80.2275],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_144db9e4c3968d998a18c97cd656a6a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_17e4a7315def9b634db9403c4d0310d4.setIcon(icon_144db9e4c3968d998a18c97cd656a6a2);
+        
+    
+        var popup_316123c16f5b083b5382be72b333db49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b011fd3ad9348e61ab2f5001a30a60c6 = $(`<div id="html_b011fd3ad9348e61ab2f5001a30a60c6" style="width: 100.0%; height: 100.0%;">School Capacity: 32549</div>`)[0];
+                popup_316123c16f5b083b5382be72b333db49.setContent(html_b011fd3ad9348e61ab2f5001a30a60c6);
+            
+        
+
+        marker_17e4a7315def9b634db9403c4d0310d4.bindPopup(popup_316123c16f5b083b5382be72b333db49)
+        ;
+
+        
+    
+    
+            var marker_856e23d2980243e05025efa9f5c83b8e = L.marker(
+                [50.4111, 80.0275],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_4cc829f185589d44ca541fb867334c4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_856e23d2980243e05025efa9f5c83b8e.setIcon(icon_4cc829f185589d44ca541fb867334c4e);
+        
+    
+        var popup_9cd6c3ce60b25e2fc57fb050d7e8accb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28f5f324fb842aa2b86f79ef505497bf = $(`<div id="html_28f5f324fb842aa2b86f79ef505497bf" style="width: 100.0%; height: 100.0%;">Number of Students: 27866</div>`)[0];
+                popup_9cd6c3ce60b25e2fc57fb050d7e8accb.setContent(html_28f5f324fb842aa2b86f79ef505497bf);
+            
+        
+
+        marker_856e23d2980243e05025efa9f5c83b8e.bindPopup(popup_9cd6c3ce60b25e2fc57fb050d7e8accb)
+        ;
+
+        
+    
+    
+            var marker_cbafd49349676a1727f4d97b3625c12a = L.marker(
+                [47.7948, 67.7085],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_88591b608520a8a69e5c70dfcf983d70 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cbafd49349676a1727f4d97b3625c12a.setIcon(icon_88591b608520a8a69e5c70dfcf983d70);
+        
+    
+        var popup_93c011bd5761d29bcadb50b9acba38c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a937d9abb0a42beb1763b05ab0021b5 = $(`<div id="html_1a937d9abb0a42beb1763b05ab0021b5" style="width: 100.0%; height: 100.0%;">School Capacity: 27420</div>`)[0];
+                popup_93c011bd5761d29bcadb50b9acba38c1.setContent(html_1a937d9abb0a42beb1763b05ab0021b5);
+            
+        
+
+        marker_cbafd49349676a1727f4d97b3625c12a.bindPopup(popup_93c011bd5761d29bcadb50b9acba38c1)
+        ;
+
+        
+    
+    
+            var marker_eb17ea8e9f31a20bd029ef0d9c5dc9a9 = L.marker(
+                [47.7948, 67.5085],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_2e25355f09df79ebae3813f2a8291852 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_eb17ea8e9f31a20bd029ef0d9c5dc9a9.setIcon(icon_2e25355f09df79ebae3813f2a8291852);
+        
+    
+        var popup_2c132d11d1f0e6a83e31d55973a7e76a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edddbad6add3a98a4f283678e7b85840 = $(`<div id="html_edddbad6add3a98a4f283678e7b85840" style="width: 100.0%; height: 100.0%;">Number of Students: 24639</div>`)[0];
+                popup_2c132d11d1f0e6a83e31d55973a7e76a.setContent(html_edddbad6add3a98a4f283678e7b85840);
+            
+        
+
+        marker_eb17ea8e9f31a20bd029ef0d9c5dc9a9.bindPopup(popup_2c132d11d1f0e6a83e31d55973a7e76a)
+        ;
+
+        
+    
+    
+            var marker_cdc661eb34e599612d9c4763bbe2cd75 = L.marker(
+                [45.0159, 78.3732],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_4ca00ed56c514090d109a6e67779c61a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_cdc661eb34e599612d9c4763bbe2cd75.setIcon(icon_4ca00ed56c514090d109a6e67779c61a);
+        
+    
+        var popup_f69977c84d91a322931e57fdf2df3a76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_89b5ea955dae7ee44b7797b95a1c71c9 = $(`<div id="html_89b5ea955dae7ee44b7797b95a1c71c9" style="width: 100.0%; height: 100.0%;">School Capacity: 32934</div>`)[0];
+                popup_f69977c84d91a322931e57fdf2df3a76.setContent(html_89b5ea955dae7ee44b7797b95a1c71c9);
+            
+        
+
+        marker_cdc661eb34e599612d9c4763bbe2cd75.bindPopup(popup_f69977c84d91a322931e57fdf2df3a76)
+        ;
+
+        
+    
+    
+            var marker_dd50f349c126526c03a50a6ecfc564cf = L.marker(
+                [45.0159, 78.1732],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_a74972ecbfcea95b7c3482ae0d4970dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_dd50f349c126526c03a50a6ecfc564cf.setIcon(icon_a74972ecbfcea95b7c3482ae0d4970dc);
+        
+    
+        var popup_23df8c9ce26433e464e5252c7859d311 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4187c8dc98ef7080262a2cfa6ec31776 = $(`<div id="html_4187c8dc98ef7080262a2cfa6ec31776" style="width: 100.0%; height: 100.0%;">Number of Students: 29717</div>`)[0];
+                popup_23df8c9ce26433e464e5252c7859d311.setContent(html_4187c8dc98ef7080262a2cfa6ec31776);
+            
+        
+
+        marker_dd50f349c126526c03a50a6ecfc564cf.bindPopup(popup_23df8c9ce26433e464e5252c7859d311)
+        ;
+
+        
+    
+    
+            var marker_aa91dfc689ad65ceada0e03b84d310a8 = L.marker(
+                [42.3001, 69.595],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_c2a9673186151bb00698de36a5eaf805 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_aa91dfc689ad65ceada0e03b84d310a8.setIcon(icon_c2a9673186151bb00698de36a5eaf805);
+        
+    
+        var popup_07a405e7fa223f0d3b20f8b7d6094ace = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d81a3d7dd954456b6f60df2993f8a9b = $(`<div id="html_0d81a3d7dd954456b6f60df2993f8a9b" style="width: 100.0%; height: 100.0%;">School Capacity: 38025</div>`)[0];
+                popup_07a405e7fa223f0d3b20f8b7d6094ace.setContent(html_0d81a3d7dd954456b6f60df2993f8a9b);
+            
+        
+
+        marker_aa91dfc689ad65ceada0e03b84d310a8.bindPopup(popup_07a405e7fa223f0d3b20f8b7d6094ace)
+        ;
+
+        
+    
+    
+            var marker_eee6b06209c5ddb5cc2ab1f8eff6aff8 = L.marker(
+                [42.3001, 69.395],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_ff95e70580c0fe24ac2b730c5fb49cd2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_eee6b06209c5ddb5cc2ab1f8eff6aff8.setIcon(icon_ff95e70580c0fe24ac2b730c5fb49cd2);
+        
+    
+        var popup_3bc2b34ae7f4a284e5b2fac1b30e5c7c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aeb8bba814fccbf5201a8ee056350628 = $(`<div id="html_aeb8bba814fccbf5201a8ee056350628" style="width: 100.0%; height: 100.0%;">Number of Students: 53747</div>`)[0];
+                popup_3bc2b34ae7f4a284e5b2fac1b30e5c7c.setContent(html_aeb8bba814fccbf5201a8ee056350628);
+            
+        
+
+        marker_eee6b06209c5ddb5cc2ab1f8eff6aff8.bindPopup(popup_3bc2b34ae7f4a284e5b2fac1b30e5c7c)
+        ;
+
+        
+    
+    
+            var marker_542a27f2c2bc9e6c0c093db93a383db3 = L.marker(
+                [43.2383, 76.9455],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_1c99cb5fc73f57cf33e173f43fbeac55 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_542a27f2c2bc9e6c0c093db93a383db3.setIcon(icon_1c99cb5fc73f57cf33e173f43fbeac55);
+        
+    
+        var popup_2e4c74005b8443091586c47403309058 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_028b67338c6ce22edfcd4f1dd2d1dfb2 = $(`<div id="html_028b67338c6ce22edfcd4f1dd2d1dfb2" style="width: 100.0%; height: 100.0%;">School Capacity: 65040</div>`)[0];
+                popup_2e4c74005b8443091586c47403309058.setContent(html_028b67338c6ce22edfcd4f1dd2d1dfb2);
+            
+        
+
+        marker_542a27f2c2bc9e6c0c093db93a383db3.bindPopup(popup_2e4c74005b8443091586c47403309058)
+        ;
+
+        
+    
+    
+            var marker_d16f169151d73e355d4b8e1d60a9d476 = L.marker(
+                [43.2383, 76.74549999999999],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_ff8e9c2c8417617103dcc6bf1d9b07e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_d16f169151d73e355d4b8e1d60a9d476.setIcon(icon_ff8e9c2c8417617103dcc6bf1d9b07e3);
+        
+    
+        var popup_f6c9934a248d318ba39fd9d177d0c355 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_107b12c1b2d616b1a4206fbc07eaf875 = $(`<div id="html_107b12c1b2d616b1a4206fbc07eaf875" style="width: 100.0%; height: 100.0%;">Number of Students: 79279</div>`)[0];
+                popup_f6c9934a248d318ba39fd9d177d0c355.setContent(html_107b12c1b2d616b1a4206fbc07eaf875);
+            
+        
+
+        marker_d16f169151d73e355d4b8e1d60a9d476.bindPopup(popup_f6c9934a248d318ba39fd9d177d0c355)
+        ;
+
+        
+    
+    
+            var marker_6fa53985b2b59a18f4c2b11e7a43fe43 = L.marker(
+                [51.1694, 71.4491],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_5c7b9d3ca273cecbab13eb5428299e2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6fa53985b2b59a18f4c2b11e7a43fe43.setIcon(icon_5c7b9d3ca273cecbab13eb5428299e2a);
+        
+    
+        var popup_d95aea2e56fd37085eab67df2868ee37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61013c52a9ea32490c3429f87aacb8c0 = $(`<div id="html_61013c52a9ea32490c3429f87aacb8c0" style="width: 100.0%; height: 100.0%;">School Capacity: 52807</div>`)[0];
+                popup_d95aea2e56fd37085eab67df2868ee37.setContent(html_61013c52a9ea32490c3429f87aacb8c0);
+            
+        
+
+        marker_6fa53985b2b59a18f4c2b11e7a43fe43.bindPopup(popup_d95aea2e56fd37085eab67df2868ee37)
+        ;
+
+        
+    
+    
+            var marker_221ee0a4ecdb22a3ad4fef401d4211cb = L.marker(
+                [51.1694, 71.2491],
+                {}
+            ).addTo(map_7f0aa876daadff967b64225529254fea);
+        
+    
+            var icon_e8211f16e2336884a607fd5e650aa2ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bar-chart", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_221ee0a4ecdb22a3ad4fef401d4211cb.setIcon(icon_e8211f16e2336884a607fd5e650aa2ae);
+        
+    
+        var popup_d93a3358b2fa7a06689addb33c45b400 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92fc336695fa6a6ce9c34080a3196a9f = $(`<div id="html_92fc336695fa6a6ce9c34080a3196a9f" style="width: 100.0%; height: 100.0%;">Number of Students: 59852</div>`)[0];
+                popup_d93a3358b2fa7a06689addb33c45b400.setContent(html_92fc336695fa6a6ce9c34080a3196a9f);
+            
+        
+
+        marker_221ee0a4ecdb22a3ad4fef401d4211cb.bindPopup(popup_d93a3358b2fa7a06689addb33c45b400)
+        ;
+
+        
+    
+</script>
+</html>
